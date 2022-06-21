@@ -265,24 +265,28 @@
 
 // Mail Send
 $('#mail-send-btn').click(function(){
-var name = $('#name').val();
-var email = $('#email').val();
-var subject = $('#subject').val();
-var message = $('#message').val();
+  $('#mail-send-loading').show();
+  
+  var name = $('#name').val();
+  var email = $('#email').val();
+  var subject = $('#subject').val();
+  var message = $('#message').val();
 
   $.ajax({
     type: 'POST',
     url: '/mail-send',
     data: {name: name, email: email, subject: subject, message: message},
     success: (data) => {
+      $('#mail-send-loading').hide();
       if(data.status == 'success'){
-        alert('Mail başarıyla gönderildi! En kısa sürede size geri dönüş yapılacaktır')
+        $('#mail-send-message-success').show();
       }else if(data.status == 'error'){
-        alert('Bir hata oluştu! Lütfen bu durumu bildir.')
+        $('#mail-send-message-error').show();
       }
     },
     error: () => {
-      alert('Bir hata oluştu! Lütfen bu durumu bildir.')
+      $('#mail-send-loading').hide();
+      $('#mail-send-message-error').show();
     }
   })
 });
