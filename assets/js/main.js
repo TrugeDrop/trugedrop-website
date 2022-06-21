@@ -262,3 +262,27 @@
   });
 
 })()
+
+// Mail Send
+$('#mail-send-btn').click(function(){
+var name = $('#name').val();
+var email = $('#email').val();
+var subject = $('#subject').val();
+var message = $('#message').val();
+
+  $.ajax({
+    type: 'POST',
+    url: '/mail-send',
+    data: {name: name, email: email, subject: subject, message: message},
+    success: (data) => {
+      if(data.status == 'success'){
+        alert('Mail başarıyla gönderildi! En kısa sürede size geri dönüş yapılacaktır')
+      }else if(data.status == 'error'){
+        alert('Bir hata oluştu! Lütfen bu durumu bildir.')
+      }
+    },
+    error: () => {
+      alert('Bir hata oluştu! Lütfen bu durumu bildir.')
+    }
+  })
+});
