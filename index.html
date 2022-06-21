@@ -264,9 +264,10 @@
                 <textarea class="form-control" id="message" rows="5" placeholder="Mesaj" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Yükleniyor</div>
+                <div class="loading" id="mail-send-loading">Yükleniyor</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Mesajınız gönderildi. Teşekkürler!</div>
+                <div class="sent-message" id="mail-send-message-success">Mesajınız gönderildi. Teşekkürler!</div>
+                <div class="sent-message" id="mail-send-message-error" style="background-color: red;">Bir hata oluştu! Lütfen bu durumu bildir.</div>
               </div>
               <div class="text-center"><button type="button" id="mail-send-btn">Mesajı Gönder</button></div>
             </div>
