@@ -283,10 +283,12 @@ $('#mail-send-btn').click(function(){
       }else if(data.status == 'error'){
         $('#mail-send-message-error').show();
       }
+      setTimeout(() => { location.reload(); }, 1000);
     },
     error: () => {
       $('#mail-send-loading').hide();
       $('#mail-send-message-error').show();
+      setTimeout(() => { location.reload(); }, 1000);
     }
   })
 });
