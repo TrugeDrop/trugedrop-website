@@ -11,22 +11,22 @@
   <meta content="trugedrop,truge,drop,nodejs,python,go,javascript,html,css,web,developer" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/img/favicon.png" rel="icon">
+  <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: MyResume - v4.7.0
@@ -77,12 +77,12 @@
 
         <div class="section-title">
           <h2>Hakkımda</h2>
-          <p>Yazılım işlerine girerli 1 yıldan fazla oluyor bu zamana kadar birçok projeye giriştiğim oldu. Çoğunlukla web developer olarak çalışırım. Bu işlere nasıl girmeyi başardın derseniz biraz meraktan olabilir.</p>
+          <p>Yazılım işlerine girerli 1 seneden fazla oluyor bu zamana kadar birçok projeye giriştiğim oldu. Çoğunlukla web developer olarak çalışırım. Bu işlere nasıl girmeyi başardın derseniz biraz meraktan olabilir.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="assets/img/trugedrop.jpg" class="img-fluid" alt="">
+            <img src="/img/trugedrop.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Web Developer</h3>
@@ -247,28 +247,28 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Adınız" required>
+                  <input type="text" class="form-control" id="name" placeholder="Adınız" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email Adresiniz" required>
+                  <input type="email" class="form-control" id="email" placeholder="Email Adresiniz" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Konu" required>
+                <input type="text" class="form-control" id="subject" placeholder="Konu" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Mesaj" required></textarea>
+                <textarea class="form-control" id="message" rows="5" placeholder="Mesaj" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Yükleniyor</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Mesajınız gönderildi. Teşekkürler!</div>
               </div>
-              <div class="text-center"><button type="submit">Mesajı Gönder</button></div>
-            </form>
+              <div class="text-center"><button type="button" id="mail-send-btn">Mesajı Gönder</button></div>
+            </div>
 
           </div>
 
@@ -306,19 +306,21 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="/vendor/purecounter/purecounter.js"></script>
+  <script src="/vendor/aos/aos.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/vendor/typed.js/typed.min.js"></script>
+  <script src="/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="/vendor/php-email-form/validate.js"></script>
 
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="/js/main.js"></script>
 </body>
 
 </html>
